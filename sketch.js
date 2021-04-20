@@ -17,11 +17,18 @@ function draw() {
   clues();
   security.display();
 
-  // Add code to display score in the middle of the screen
-  text.display=("score");
+  fill(255);
+  textSize(30);
+  text("SCORE: "+score, 800, 100);
 
-  // Add code to display the end screen
-  background("treasure.jpg")
+  if(score===3){
+    clear();
+    background(bg2);
+    fill("red");
+    textSize(40);
+    text("TREASURE UNLOCKED", 350,250);
+  } 
+  
   
   
 
